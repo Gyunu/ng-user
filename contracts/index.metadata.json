@@ -1,1 +1,1 @@
-[{"__symbolic":"module","version":3,"metadata":{},"exports":[{"from":"./schema.contract","export":["USERSCHEMA"]}]},{"__symbolic":"module","version":1,"metadata":{},"exports":[{"from":"./schema.contract","export":["USERSCHEMA"]}]}]
+[{"__symbolic":"module","version":3,"metadata":{},"exports":[{"from":"./config.contract","export":["USERCONFIG"]},{"from":"./storage.contract","export":["Storage"]}]},{"__symbolic":"module","version":1,"metadata":{},"exports":[{"from":"./config.contract","export":["USERCONFIG"]},{"from":"./storage.contract","export":["Storage"]}]}]

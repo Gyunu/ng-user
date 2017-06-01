@@ -1,1 +1,2 @@
-export { USERSCHEMA } from './schema.contract';
+export { USERCONFIG } from './config.contract';
+export { Storage } from './storage.contract';

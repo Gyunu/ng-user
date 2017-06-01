@@ -1,5 +1,4 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
-
 /*
   Services
 */
@@ -9,7 +8,7 @@ import { UserService } from './services/index';
   Contracts
 */
 import {
-  USERSCHEMA
+  USERCONFIG
 } from "./contracts/index";
 
 
@@ -25,12 +24,12 @@ import {
 })
 export class UserModule {
 
-  static forRoot(config = {schema: null}): ModuleWithProviders {
+  static forRoot(config = {schema: {}, prefix: 'users'}): ModuleWithProviders {
     return {
       ngModule: UserModule,
       providers: [
         {provide: UserService, useClass: UserService},
-        {provide: USERSCHEMA, useValue: config.schema}
+        {provide: USERCONFIG, useValue: config}
       ]
     }
   }
